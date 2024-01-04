@@ -1,0 +1,422 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap");
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+label,
+span,
+a {
+    font-family: "Cairo", sans-serif !important;
+    letter-spacing: 0;
+}
+.dropdown .dropdown-menu .dropdown-item {
+    text-align: right;
+}
+.hover-dropdown {
+    right: 0;
+    left: auto;
+}
+.hover-dropdown li {
+    text-align: right;
+}
+.main_menu a i {
+    margin-right: 19px;
+    margin-left: auto;
+}
+.main_menu .cart span {
+    left: 3px;
+    right: auto;
+}
+.slider-content {
+    right: 100px;
+    left: auto;
+    text-align: right;
+}
+.slider-content p:after {
+    right: -10px;
+    left: auto;
+}
+.dots {
+    left: 20px;
+    right: auto;
+}
+.section_tittle h2 {
+    text-align: right;
+}
+.section_tittle {
+    background-position: 90%;
+}
+.section_tittle p {
+    text-align: left;
+}
+.add_wishlist {
+    right: 10px;
+    left: auto;
+}
+.single_product_item .single_product_text {
+    text-align: right;
+}
+.single_product_item .single_product_text a {
+    left: 15px;
+    right: auto;
+}
+.influencers h2 {
+    text-align: center;
+}
+.offer_text {
+    text-align: right;
+}
+.division_text {
+    right: 25px;
+    left: auto;
+    text-align: right;
+}
+.footer-top {
+    text-align: right;
+}
+.topbar ul.dropdown-menu.show a {
+    text-align: right;
+}
+.topbar #currency {
+    padding: 0 0.5rem 0 0;
+}
+.topbar #currency_lang {
+    padding-left: 0 !important;
+    padding-right: 0.5rem !important;
+}
+#login_register a:nth-child(1):after {
+    right: auto;
+    left: -12px;
+}
+.login .col-md-6 {
+    text-align: right;
+}
+.header_breadcrump ul li {
+    position: relative;
+}
+.header_breadcrump ul li:before {
+    right: -16px;
+    position: absolute;
+    left: auto;
+}
+.my-profile h3,
+.my-profile .col-md-6 {
+    text-align: right;
+}
+.notifications h3 {
+    text-align: right;
+}
+.notifications p {
+    text-align: left !important;
+}
+.notification .col-md-1 {
+    text-align: left !important;
+}
+.notification img {
+    margin-left: 10px;
+    margin-right: 0;
+}
+.notification,
+.my-orders h3 {
+    text-align: right;
+}
+.table thead th,
+.table td {
+    text-align: right;
+}
+.my-orders button:first-child {
+    padding-right: 0;
+    padding-left: 16px;
+}
+.manage_address h5 {
+    text-align: right;
+}
+/* Radio Buttons */
+.form-check {
+    padding-right: 1.25rem;
+    text-align: right;
+}
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    right: -9999px;
+    left: auto;
+}
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label {
+    padding-right: 28px;
+}
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+    right: -5px;
+    left: auto;
+}
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+    right: -1px;
+    left: auto;
+}
+/* Radio Buttons */
+/* Checkbox */
+[type="checkbox"]:checked + label,
+[type="checkbox"]:not(:checked) + label {
+    padding-right: 28px;
+}
+[type="checkbox"]:checked,
+[type="checkbox"]:not(:checked) {
+    right: -9999px;
+    left: auto;
+}
+[type="checkbox"]:checked + label:before,
+[type="checkbox"]:not(:checked) + label:before {
+    right: 0px;
+    left: auto;
+}
+[type="checkbox"]:checked + label:after,
+[type="checkbox"]:not(:checked) + label:after {
+    right: 4px;
+    left: auto;
+}
+/* Checkbox */
+.influencers-page h3 {
+    text-align: right;
+}
+.contact-us .right {
+    text-align: right;
+    background-position: 100%;
+}
+.contact-us .left {
+    text-align: right;
+}
+.contact-row img {
+    margin-left: 8px;
+    margin-right: 0;
+}
+.contact-row p span,
+.contact-row p span a {
+    float: left;
+    margin-right: 4px;
+    direction: ltr;
+}
+.cart_inner .table tbody tr td .media .d-flex {
+    padding-left: 30px;
+    padding-right: 0;
+}
+.cart_inner .table tbody tr td .product_count input {
+    padding-right: 30px;
+    padding-left: 0;
+}
+.cart_area .product_count .input-number-decrement,
+.cart_area .product_count .input-number-increment {
+    left: 0;
+    border-right: 1px solid #dddddd;
+    right: auto;
+}
+.cart-coupon form button {
+    left: 0;
+    right: auto;
+    transform: translateY(-50%) scaleX(-1);
+}
+.cart-coupon div.col-lg-6 {
+    text-align: right;
+}
+.cart-coupon .col-lg-6.text-right {
+    text-align: left !important;
+}
+.checkout-form h3 {
+    text-align: right;
+}
+.checkout-form .checkout-actions a {
+    text-align: right;
+}
+.cart-product h4 {
+    text-align: right;
+    display: flex;
+    align-items: center;
+}
+.cart-product h4 span {
+    margin-right: 5px;
+}
+body .cart-product p.size {
+    text-align: right;
+    display: flex;
+}
+.cart-product .text-right {
+    text-align: left !important;
+}
+body .cart-product p.size span.text-color {
+    margin-right: 5px;
+}
+.checkout-form {
+    text-align: right;
+}
+.lingallery_thumbnails_content {
+    text-align: right;
+}
+.product-title {
+    text-align: right;
+}
+#single-product .item-code div {
+    display: flex;
+}
+#single-product .size span:first-child {
+    margin-right: 20px;
+}
+#single-product .icons button,
+#single-product .buttons button {
+    margin: 0 0 0 20px;
+}
+#single-product .nav-tabs button {
+    padding-right: 0;
+    padding-left: 32px;
+}
+#single-product .tab-content p {
+    text-align: right;
+}
+.add-review {
+    text-align: right;
+}
+#single-product .icons button i {
+    margin-right: 5px;
+}
+#about_left_content {
+    right: 15%;
+    left: auto;
+    text-align: right;
+}
+.section_two .row {
+    justify-content: flex-start !important;
+}
+.section_two #about_left_content {
+    right: auto;
+    left: 15%;
+}
+#about_left_content h4:before {
+    right: -20%;
+    left: auto;
+}
+.section_two #about_right_image {
+    text-align: right;
+}
+.static_pages {
+    text-align: right;
+}
+.luxury-button .fa {
+    margin: 0 25px 0 0;
+    transform: scaleX(-1);
+}
+.luxury_about {
+    text-align: right;
+}
+.luxury_about .right_section img {
+    right: -20%;
+    left: auto;
+}
+.luxury_category_content:before {
+    right: 42px;
+    left: auto;
+}
+.luxury_category_content {
+    text-align: right;
+}
+.luxury_category_content img {
+    padding-right: 5%;
+    padding-left: 0;
+}
+.luxury_shop .header_title {
+    left: auto;
+    right: 5%;
+    text-align: right;
+}
+.luxury_new_arrivals .filters {
+    text-align: right;
+}
+.luxury_new_arrivals .switch-wrap {
+    flex-direction: row-reverse;
+}
+.filters .switch-wrap p {
+    margin: 0 10px 0 0;
+}
+.luxury_new_arrivals .col-lg-9 .col-lg-6:first-child {
+    text-align: right;
+}
+.luxury_new_arrivals .col-lg-9 .col-lg-6:last-child {
+    text-align: left !important;
+}
+.single_product_item .single_product_text .add_cart i {
+    float: left;
+}
+.edit-img label {
+    margin-right: 50px;
+}
+.edit-img label:after {
+    left: -102px;
+    right: auto;
+}
+@media (max-width: 767px) {
+    .navbar-light .navbar-toggler {
+        right: auto;
+        left: 5px;
+    }
+    #dropdownMenuButton1 {
+        padding-right: 0;
+    }
+    .main_menu .main-menu-item .nav-item .nav-link {
+        text-align: right;
+    }
+    .main_menu .main-menu-item ul li a.nav-link.active {
+        background-position: right;
+    }
+    .slider-content {
+        right: 30px;
+    }
+    #single-product .icons button,
+    #single-product .buttons button {
+        margin: 5px;
+    }
+    .edit-img label:after {
+        left: -50px;
+    }
+    .manage_address .form-check i.bx-trash {
+        margin-right: 28px;
+        margin-left: 6px;
+    }
+    .contact-us .right {
+        padding: 20px;
+        min-height: 550px;
+    }
+    .contact-us .right form {
+        margin-right: 20px;
+    }
+}
+
+.header-right {
+    margin-left: unset;
+    margin-right: auto;
+    align-self: stretch;
+}
+.header-intro-clearance .header-dropdown > a,
+.header-intro-clearance .header-dropdown > span {
+    padding-left: 1.8rem;
+    text-transform: none;
+}
+.header-dropdown > a:after,
+.header-dropdown > span:after {
+    left: 0;
+}
+.header-intro-clearance .account,
+.header-intro-clearance .cart-dropdown,
+.header-intro-clearance .wishlist {
+    padding-right: 3rem;
+    padding-left: unset;
+}
+
+.header-intro-clearance .header-bottom .menu > li > a {
+    font-size: 1.2rem;
+    letter-spacing: 0;
+    text-transform: none;
+}

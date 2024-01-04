@@ -1,0 +1,35 @@
+/*================================================================================
+	Item Name: Materialize - Material Design Admin Template
+	Version: 5.0
+	Author: PIXINVENT
+	Author URL: https://themeforest.net/user/pixinvent/portfolio
+================================================================================
+
+NOTE:
+------
+PLACE HERE YOUR OWN CSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS.
+WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
+a {
+    color: #cea74e;
+}
+.gradient-45deg-indigo-purple {
+    background: #cea74e;
+    background: linear-gradient(45deg, #212529, #cea74e) !important;
+}
+
+.sidenav .navigation-header .navigation-header-text {
+    padding: 0 !important;
+    margin: 0;
+    height: 30px;
+    color: #969696;
+    line-height: 30px;
+    font-size: 0.65rem;
+    font-weight: 600;
+}
+.sidenav li > a,
+.sidenav li a.collapsible-header {
+    font-weight: 500;
+}
+.photo-border {
+    border-radius: 6px;
+}

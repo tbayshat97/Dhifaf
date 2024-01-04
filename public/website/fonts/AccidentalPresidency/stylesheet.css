@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Accidental Presidency';
+    src: url('AccidentalPresidency.eot');
+    src: url('AccidentalPresidency.eot?#iefix') format('embedded-opentype'),
+        url('AccidentalPresidency.woff2') format('woff2'),
+        url('AccidentalPresidency.woff') format('woff'),
+        url('AccidentalPresidency.ttf') format('truetype'),
+        url('AccidentalPresidency.svg#AccidentalPresidency') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

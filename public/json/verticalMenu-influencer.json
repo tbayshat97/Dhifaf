@@ -1,0 +1,28 @@
+{
+    "menu": [
+        {
+            "url": "influencer/dashboard",
+            "name": "Dashboard",
+            "i18n": "Dashboard",
+            "class": "waves-effect waves-cyan",
+            "slug": "dashboard",
+            "icon": "equalizer"
+        },
+        {
+            "url": "influencer/product",
+            "name": "Influencer Product",
+            "i18n": "Influencer Product",
+            "class": "waves-effect waves-cyan",
+            "slug": "All product",
+            "icon": "watch"
+        },
+        {
+            "url": "influencer/my-product",
+            "name": "Influencer Product List",
+            "i18n": "Influencer Product List",
+            "class": "waves-effect waves-cyan",
+            "slug": "My products",
+            "icon": "shopify"
+        }
+    ]
+}

@@ -1,0 +1,58 @@
+{
+    "menu": [
+        {
+            "url": "brand/dashboard",
+            "name": "Dashboard",
+            "i18n": "Dashboard",
+            "class": "waves-effect waves-cyan",
+            "slug": "dashboard",
+            "icon": "equalizer"
+        },
+        {
+            "url": "brand/brand-category",
+            "name": "Categories",
+            "i18n": "Categories",
+            "class": "waves-effect waves-cyan",
+            "icon": "format_list_bulleted",
+            "slug": "admin/brandCategory"
+        },
+        {
+            "url": "brand/sub-brand",
+            "name": "Sub Brands",
+            "i18n": "Sub Brands",
+            "class": "waves-effect waves-cyan",
+            "icon": "star_border",
+            "slug": "brand/sub-brand"
+        },
+        {
+            "url": "javascript:void(0)",
+            "name": "Site Management",
+            "i18n": "Site Management",
+            "class": "collapsible-header waves-effect waves-cyan",
+            "slug": "",
+            "icon": "web",
+            "submenu": [
+                {
+                    "url": "/brand/brand-slider",
+                    "name": "Brand Slider",
+                    "i18n": "Brand Slider",
+                    "slug": "brand-slider"
+                }
+                ,
+                {
+                    "url": "/brand/brand-banner",
+                    "name": "Banner",
+                    "i18n": "Banner",
+                    "slug": "brand-banner"
+                }
+                ,
+                {
+                    "url": "/brand/brand-about",
+                    "name": "About",
+                    "i18n": "About",
+                    "slug": "brand-about"
+                }
+            ]
+        }
+    ]
+}

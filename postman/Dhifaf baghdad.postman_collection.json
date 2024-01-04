@@ -1,0 +1,2454 @@
+{
+	"info": {
+		"_postman_id": "def3dee0-53b2-467d-900e-c14b9c4984fa",
+		"name": "Dhifaf baghdad",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Customer",
+			"item": [
+				{
+					"name": "Auth",
+					"item": [
+						{
+							"name": "Social",
+							"item": [
+								{
+									"name": "Facebook login",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"var jsonData = JSON.parse(responseBody);\r",
+													"postman.setEnvironmentVariable(\"customer_bearer_token\", jsonData.data.access_token);"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"type": "text",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept-Language",
+												"type": "text",
+												"value": "ar"
+											},
+											{
+												"key": "",
+												"value": "",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "facebook_token",
+													"value": "EAACSnXZCbk5IBAD0g37YBUvd9v4qu3wXYB3azgumHwv2IP3s9husUyrGdihMWZA21wbq1frFJirdfsDcZAD1urcKflcMQ76WsZAOGTwa0BbmCIpJ284keNuMjWeUnOluIvo5e87LJ9vnaXr0bPfyoYhMVbZAtDroPhpT6gv2AmNpRocqEzWcg6IuVYqi1ry0ZBJWtM4RZCIjjLz0fldBNS0ZCVJRDQmnwM61h6CyyqQ4SVAk2uojfOCX\n",
+													"type": "text"
+												},
+												{
+													"key": "device_id",
+													"value": "074a322a-4dc7-11eb-ae93-0242ac130002",
+													"description": "fcm token*",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{server}}/customer/facebook/login",
+											"host": [
+												"{{server}}"
+											],
+											"path": [
+												"customer",
+												"facebook",
+												"login"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Google login",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"var jsonData = JSON.parse(responseBody);\r",
+													"postman.setEnvironmentVariable(\"customer_bearer_token\", jsonData.data.access_token);"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"type": "text",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept-Language",
+												"type": "text",
+												"value": "ar"
+											},
+											{
+												"key": "",
+												"value": "",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "google_token",
+													"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImZkMjg1ZWQ0ZmViY2IxYWVhZmU3ODA0NjJiYzU2OWQyMzhjNTA2ZDkiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiI4MTM3NTQwNDEzOS1jNmw4MHNwODljdG82M2Jkb25uZHRzNWlocXFobWVrci5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImF1ZCI6IjgxMzc1NDA0MTM5LTdzb3EzdXVlOGFzamlqODhrbWlrZWhrYTcwODM4bjVzLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTE0NzE5NDAxNzA5MTMyMDEzNTE1IiwiZW1haWwiOiJ0ZXN0cWlvdGljQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJuYW1lIjoiUWlvdGljIFRlc3QiLCJwaWN0dXJlIjoiaHR0cHM6Ly9saDMuZ29vZ2xldXNlcmNvbnRlbnQuY29tLy1tanBsd1lyWVBZNC9BQUFBQUFBQUFBSS9BQUFBQUFBQUFBQS9BTVp1dWNuMkc0LUlMZUMtNWZKWi1SUjVpNnI2bWpyYTdBL3M5Ni1jL3Bob3RvLmpwZyIsImdpdmVuX25hbWUiOiJRaW90aWMiLCJmYW1pbHlfbmFtZSI6IlRlc3QiLCJsb2NhbGUiOiJlbiIsImlhdCI6MTYxMzM5MDk2OCwiZXhwIjoxNjEzMzk0NTY4fQ.Mo6RTuseOT69GseibHJE1roCRWUcGlWTI49CFv1a8vi1-WPlC8UQE3eDs2gGm436gE7-re0u6M1Z9Q_HrxDXXsOqUQhEs-ecl0FGp5O4mwMMaslh0Qy32Q1-WfwQTrSnaa_Kc5IUNU-klG3pkq32R8JVNWjD7DGYG4kHq7m9RCOfz6H5CtuHooit0RWZEaleIssm_HBuVEJQdnUY2jK1nQJTtGWcLBomPdDmusNgSfo8qEfwhQqmb-Xebk7K70lQu4Mtlp8pERnod6hlTb9DuAmLO25bBAWp7ILBVeaSCrV6jpnIld5Ie-B4OI0xa62y-xWjbkbXtEmVbtR_SlBHKQ",
+													"type": "text"
+												},
+												{
+													"key": "device_id",
+													"value": "074a322a-4dc7-11eb-ae93-0242ac130002",
+													"description": "fcm token*",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{server}}/customer/google/login",
+											"host": [
+												"{{server}}"
+											],
+											"path": [
+												"customer",
+												"google",
+												"login"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Apple login",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"var jsonData = JSON.parse(responseBody);\r",
+													"postman.setEnvironmentVariable(\"customer_bearer_token\", jsonData.data.access_token);"
+												],
+												"type": "text/javascript"
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"type": "text",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept-Language",
+												"type": "text",
+												"value": "ar"
+											},
+											{
+												"key": "",
+												"value": "",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "providerId",
+													"value": "116801298493589401293",
+													"type": "text"
+												},
+												{
+													"key": "first_name",
+													"value": "Kareem",
+													"type": "text"
+												},
+												{
+													"key": "last_name",
+													"value": "tubishat",
+													"type": "text"
+												},
+												{
+													"key": "device_id",
+													"value": "074a322a-4dc7-11eb-ae93-0242ac130002",
+													"description": "fcm token*",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{local}}/customer/apple/login",
+											"host": [
+												"{{local}}"
+											],
+											"path": [
+												"customer",
+												"apple",
+												"login"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "Link Another Account",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "{{customer_bearer_token}}",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"type": "text",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept-Language",
+												"type": "text",
+												"value": "ar"
+											},
+											{
+												"key": "",
+												"type": "text",
+												"value": ""
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "provider_id",
+													"value": "123456",
+													"type": "text"
+												},
+												{
+													"key": "provider",
+													"value": "facebook",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{local}}/customer/social/link",
+											"host": [
+												"{{local}}"
+											],
+											"path": [
+												"customer",
+												"social",
+												"link"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Register",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept-Language",
+										"type": "text",
+										"value": "ar"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "username",
+											"value": "962796507333",
+											"description": "required",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123456",
+											"description": "required|min:6",
+											"type": "text"
+										},
+										{
+											"key": "rpassword",
+											"value": "123456",
+											"description": "required|same:password",
+											"type": "text"
+										},
+										{
+											"key": "city_id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "first_name",
+											"value": "Kareem",
+											"description": "required",
+											"type": "text"
+										},
+										{
+											"key": "last_name",
+											"value": "Tubishat",
+											"description": "required",
+											"type": "text"
+										},
+										{
+											"key": "birthdate",
+											"value": "1997-12-15",
+											"type": "text"
+										},
+										{
+											"key": "gender",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{local}}/customer/register",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"customer",
+										"register"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Login",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"var jsonData = JSON.parse(responseBody);\r",
+											"postman.setEnvironmentVariable(\"customer_bearer_token\", jsonData.data.token.access_token);"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Accept-Language",
+										"value": "en",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "username",
+											"value": "962796507289",
+											"description": "phone_number or username",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "123456",
+											"type": "text"
+										},
+										{
+											"key": "fcm_token",
+											"value": "174a322a-4dc7-11eb-ae93-0242ac130002",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "{{local}}/customer/login",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"customer",
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Verify SMS",
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Accept-Language",
+										"value": "ar",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "username",
+											"value": "962796507289",
+											"type": "text"
+										},
+										{
+											"key": "verification_code",
+											"value": "9995",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{local}}/customer/verify-sms",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"customer",
+										"verify-sms"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Resend sms",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept-Language",
+										"type": "text",
+										"value": "ar"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "username",
+											"value": "962796507289",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{local}}/customer/resend-sms",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"customer",
+										"resend-sms"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Forget Password",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept-Language",
+										"type": "text",
+										"value": "ar"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "username",
+											"value": "962796507289",
+											"description": "required",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{local}}/customer/forget-password",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"customer",
+										"forget-password"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Reset Password (for forget)",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept-Language",
+										"type": "text",
+										"value": "ar"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "username",
+											"value": "962796507289",
+											"description": "required",
+											"type": "text"
+										},
+										{
+											"key": "new_password",
+											"value": "1234567",
+											"description": "required|min 6",
+											"type": "text"
+										},
+										{
+											"key": "confirm_password",
+											"value": "1234567",
+											"description": "required|same:password",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{local}}/customer/reset-password",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"customer",
+										"reset-password"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Change Password",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{customer_bearer_token}}",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "{{{{bearer-token}}}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept-Language",
+										"type": "text",
+										"value": "ar"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "old_password",
+											"value": "123456",
+											"description": "required",
+											"type": "text"
+										},
+										{
+											"key": "new_password",
+											"value": "1234567",
+											"description": "required|min:6|different:old_password",
+											"type": "text"
+										},
+										{
+											"key": "confirm_password",
+											"value": "1234567",
+											"description": "required|same:new_password",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{local}}/customer/change-password",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"customer",
+										"change-password"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Logout",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											"postman.setEnvironmentVariable(\"customer_bearer_token\", \"-\");"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{customer_bearer_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept-Language",
+										"type": "text",
+										"value": "ar"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{local}}/customer/logout",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"customer",
+										"logout"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Logout From Other Devices",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"exec": [
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{customer_bearer_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept-Language",
+										"type": "text",
+										"value": "ar"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{local}}/customer/logout/other-devices",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"customer",
+										"logout",
+										"other-devices"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Profile",
+					"item": [
+						{
+							"name": "Profile",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{customer_bearer_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept-Language",
+										"type": "text",
+										"value": "ar"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{local}}/customer/profile",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"customer",
+										"profile"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Profile",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{customer_bearer_token}}",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "{{{{bearer-token}}}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept-Language",
+										"type": "text",
+										"value": "ar"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "first_name",
+											"value": "Kareem",
+											"type": "text"
+										},
+										{
+											"key": "last_name",
+											"value": "Mohammed",
+											"type": "text"
+										},
+										{
+											"key": "birthdate",
+											"value": "1997-12-19",
+											"type": "text"
+										},
+										{
+											"key": "image",
+											"type": "file",
+											"src": "/C:/Users/user/Pictures/test.jpg"
+										},
+										{
+											"key": "fcm_token",
+											"value": "174a322a-4dc7-11eb-ae93-0242ac130002",
+											"type": "text"
+										},
+										{
+											"key": "gender",
+											"value": "1 = male , 2 = female",
+											"type": "text"
+										},
+										{
+											"key": "bio",
+											"value": "Hey ..",
+											"type": "text"
+										},
+										{
+											"key": "city_id",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{local}}/customer/profile",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"customer",
+										"profile"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Need to update phone ?",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{customer_bearer_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept-Language",
+										"type": "text",
+										"value": "ar"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{local}}/customer/profile/check-if-need-to-update-phone",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"customer",
+										"profile",
+										"check-if-need-to-update-phone"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Username/Phone",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{customer_bearer_token}}",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "{{{{bearer-token}}}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept-Language",
+										"type": "text",
+										"value": "ar"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "username",
+											"value": "962796507289",
+											"description": "required|unique",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{local}}/customer/profile/update-username",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"customer",
+										"profile",
+										"update-username"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Public",
+					"item": [
+						{
+							"name": "Walkthrough",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept-Language",
+										"type": "text",
+										"value": "ar"
+									}
+								],
+								"url": {
+									"raw": "{{local}}/customer/walkthrough",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"customer",
+										"walkthrough"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CMS Pages",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept-Language",
+										"type": "text",
+										"value": "ar"
+									}
+								],
+								"url": {
+									"raw": "{{local}}/customer/static-pages",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"customer",
+										"static-pages"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Main slider",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Accept-Language",
+										"value": "en",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{local}}/customer/main-slider",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"customer",
+										"main-slider"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Website Slider",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Accept-Language",
+										"value": "en",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{server}}/customer/website-slider",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"customer",
+										"website-slider"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Luxury Brands",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Accept-Language",
+										"value": "en",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{server}}/customer/brand/luxury",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"customer",
+										"brand",
+										"luxury"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Normal Brands",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Accept-Language",
+										"value": "en",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{server}}/customer/brand/normal",
+									"host": [
+										"{{server}}"
+									],
+									"path": [
+										"customer",
+										"brand",
+										"normal"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Influencers",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Accept-Language",
+										"value": "en",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{local}}/customer/Influencers",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"customer",
+										"Influencers"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Division",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Accept-Language",
+										"value": "en",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{local}}/customer/division",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"customer",
+										"division"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Division Categories",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Accept-Language",
+										"value": "en",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{local}}/customer/division/9",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"customer",
+										"division",
+										"9"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Categories + Sub",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Accept-Language",
+										"value": "en",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{local}}/customer/categories",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"customer",
+										"categories"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "City",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Accept-Language",
+										"value": "en",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{local}}/customer/city",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"customer",
+										"city"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Banners",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Accept-Language",
+										"value": "en",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{local}}/customer/banners",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"customer",
+										"banners"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Follow us",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Accept-Language",
+										"value": "en",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{local}}/customer/follow-us",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"customer",
+										"follow-us"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Product",
+					"item": [
+						{
+							"name": "Show",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept-Language",
+										"type": "text",
+										"value": "ar"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{local}}/customer/product/1",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"customer",
+										"product",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Featured",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept-Language",
+										"type": "text",
+										"value": "ar"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{local}}/customer/product/get/featured",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"customer",
+										"product",
+										"get",
+										"featured"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "New",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept-Language",
+										"type": "text",
+										"value": "ar"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{local}}/customer/product/get/new",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"customer",
+										"product",
+										"get",
+										"new"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Top",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept-Language",
+										"type": "text",
+										"value": "ar"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{local}}/customer/product/get/top",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"customer",
+										"product",
+										"get",
+										"top"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Related",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept-Language",
+										"type": "text",
+										"value": "ar"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{local}}/customer/product/related/1",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"customer",
+										"product",
+										"related",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Wish list",
+					"item": [
+						{
+							"name": "List",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{customer_bearer_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept-Language",
+										"type": "text",
+										"value": "ar"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{local}}/customer/wishlist/list",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"customer",
+										"wishlist",
+										"list"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Add",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{customer_bearer_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept-Language",
+										"type": "text",
+										"value": "ar"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"product_id\": 2\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{local}}/customer/wishlist",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"customer",
+										"wishlist"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{customer_bearer_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept-Language",
+										"type": "text",
+										"value": "ar"
+									}
+								],
+								"url": {
+									"raw": "{{local}}/customer/wishlist/18",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"customer",
+										"wishlist",
+										"18"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Favorite",
+					"item": [
+						{
+							"name": "List",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{customer_bearer_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept-Language",
+										"type": "text",
+										"value": "ar"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{local}}/customer/favorite/list",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"customer",
+										"favorite",
+										"list"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Add",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{customer_bearer_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept-Language",
+										"type": "text",
+										"value": "ar"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"product_id\": 4\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{local}}/customer/favorite",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"customer",
+										"favorite"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{customer_bearer_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept-Language",
+										"type": "text",
+										"value": "ar"
+									}
+								],
+								"url": {
+									"raw": "{{local}}/customer/favorite/2",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"customer",
+										"favorite",
+										"2"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Notification",
+					"item": [
+						{
+							"name": "List",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{customer_bearer_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept-Language",
+										"type": "text",
+										"value": "ar"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{local}}/customer/notification",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"customer",
+										"notification"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete All",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{customer_bearer_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept-Language",
+										"type": "text",
+										"value": "ar"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{local}}/customer/notification/delete-all",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"customer",
+										"notification",
+										"delete-all"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Single Notification",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{customer_bearer_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept-Language",
+										"type": "text",
+										"value": "ar"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{local}}/customer/notification/77",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"customer",
+										"notification",
+										"77"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Receive notification",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "password",
+											"value": "{{{{bearer-token}}}}",
+											"type": "string"
+										},
+										{
+											"key": "token",
+											"value": "{{customer_bearer_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept-Language",
+										"type": "text",
+										"value": "ar"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "fcm_token",
+											"value": "174a322a-4dc7-11eb-ae93-0242ac130002",
+											"description": "*fcm_token",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{local}}/customer/receive-notification",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"customer",
+										"receive-notification"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Review",
+					"item": [
+						{
+							"name": "Add Customer Review",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{customer_bearer_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept-Language",
+										"type": "text",
+										"value": "ar"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "rate_type",
+											"value": "product",
+											"description": "product,influencer",
+											"type": "text"
+										},
+										{
+											"key": "rate_type_id",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "rate",
+											"value": "5",
+											"description": "1,2,3,4,5",
+											"type": "text"
+										},
+										{
+											"key": "note",
+											"value": "Good",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{local}}/customer/review",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"customer",
+										"review"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Is Review",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{customer_bearer_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept-Language",
+										"type": "text",
+										"value": "ar"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "rate_type",
+											"value": "product",
+											"description": "product,influencer",
+											"type": "text"
+										},
+										{
+											"key": "rate_type_id",
+											"value": "1",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{local}}/customer/review/is-review",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"customer",
+										"review",
+										"is-review"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Address",
+					"item": [
+						{
+							"name": "List",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{customer_bearer_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept-Language",
+										"type": "text",
+										"value": "ar"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{local}}/customer/address",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"customer",
+										"address"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Add Address",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{customer_bearer_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept-Language",
+										"type": "text",
+										"value": "ar"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\" : \"Home\",\r\n    \"city\" : 1,\r\n    \"area\" : 1,\r\n    \"street_address\" : \"Wasfi Al Tal Street\",\r\n    \"building_number\" : \"12\",\r\n    \"apartment_number\" : \"9\",\r\n    \"zip\" : \"11111\",\r\n    \"additional_info\" : \"ورا مصنع الكراسي\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{local}}/customer/address",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"customer",
+										"address"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Address",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{customer_bearer_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept-Language",
+										"type": "text",
+										"value": "ar"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\" : \"Work\",\r\n    \"city\" : 1,\r\n    \"area\" : 1,\r\n    \"street_address\" : \"Wasfi Al Tal Street\",\r\n    \"building_number\" : \"12\",\r\n    \"apartment_number\" : \"9\",\r\n    \"zip\" : \"11111\",\r\n    \"additional_info\" : \"ورا مصنع الكراسي\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{local}}/customer/address/1",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"customer",
+										"address",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Set Is Active",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{customer_bearer_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept-Language",
+										"type": "text",
+										"value": "ar"
+									}
+								],
+								"url": {
+									"raw": "{{local}}/customer/address/1",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"customer",
+										"address",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Address",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{customer_bearer_token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept-Language",
+										"type": "text",
+										"value": "ar"
+									}
+								],
+								"url": {
+									"raw": "{{local}}/customer/address/1",
+									"host": [
+										"{{local}}"
+									],
+									"path": [
+										"customer",
+										"address",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}

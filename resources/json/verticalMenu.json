@@ -1,0 +1,437 @@
+{
+    "menu": [
+        {
+            "url": "admin/dashboard",
+            "name": "Dashboard",
+            "i18n": "Dashboard",
+            "class": "waves-effect waves-cyan",
+            "slug": "dashboard",
+            "icon": "equalizer"
+        },
+        {
+            "navheader": "CLIENTS MANAGEMENT",
+            "icon": "more_horiz"
+        },
+        {
+            "url": "admin/customer",
+            "name": "Clients",
+            "i18n": "Clients",
+            "class": "waves-effect waves-cyan",
+            "icon": "person_outline",
+            "slug": "customer"
+        },
+        {
+            "navheader": "INFLUENCER MANAGEMENT",
+            "icon": "more_horiz"
+        },
+        {
+            "url": "admin/influencer",
+            "name": "influencer",
+            "i18n": "influencer",
+            "class": "waves-effect waves-cyan",
+            "icon": "supervisor_account",
+            "slug": "influencer"
+        },
+        {
+            "navheader": "ADMINISTRATORS MANAGEMENT",
+            "icon": "more_horiz"
+        },
+        {
+            "url": "admin/administration",
+            "name": "Administrators",
+            "i18n": "Administrators",
+            "class": "waves-effect waves-cyan",
+            "icon": "verified_user",
+            "slug": "administration"
+        },
+        {
+            "url": "admin/roles",
+            "name": "Role Management",
+            "i18n": "Role Management",
+            "class": "waves-effect waves-cyan",
+            "slug": "admin/roles",
+            "icon": "lock_open"
+        },
+        {
+            "navheader": "NOTIFICATIONS MANAGEMENT",
+            "icon": "more_horiz"
+        },
+        {
+            "url": "admin/send-notification",
+            "name": "Send Notifications",
+            "i18n": "Send Notifications",
+            "class": "waves-effect waves-cyan",
+            "icon": "notifications",
+            "slug": "send-notification"
+        },
+        {
+            "navheader": "CATALOG MANAGEMENT",
+            "icon": "more_horiz"
+        },
+        {
+            "url": "admin/division",
+            "name": "division",
+            "i18n": "division",
+            "class": "waves-effect waves-cyan",
+            "icon": "apps",
+            "slug": "admin/division"
+        },
+        {
+            "url": "admin/category",
+            "name": "Categories",
+            "i18n": "Categories",
+            "class": "waves-effect waves-cyan",
+            "icon": "library_books",
+            "slug": "admin/category"
+        },
+        {
+            "url": "admin/subCategory",
+            "name": "subCategory",
+            "i18n": "subCategory",
+            "class": "waves-effect waves-cyan",
+            "icon": "list",
+            "slug": "admin/subCategory"
+        },
+        {
+            "url": "admin/brand",
+            "name": "brand",
+            "i18n": "brand",
+            "class": "waves-effect waves-cyan",
+            "icon": "star",
+            "slug": "admin/brand"
+        },
+        {
+            "url": "admin/sub-brand",
+            "name": "Sub Brands",
+            "i18n": "Sub Brands",
+            "class": "waves-effect waves-cyan",
+            "icon": "star_border",
+            "slug": "admin/brand"
+        },
+        {
+            "url": "admin/tree-view",
+            "name": "Tree View",
+            "i18n": "Tree View",
+            "class": "waves-effect waves-cyan",
+            "icon": "grid_on",
+            "slug": "admin/tree-view"
+        },
+        {
+            "navheader": "ECOMMERCE MANAGEMENT",
+            "icon": "more_horiz"
+        },
+        {
+            "url": "admin/product",
+            "name": "Products",
+            "i18n": "Products",
+            "class": "waves-effect waves-cyan",
+            "icon": "camera",
+            "slug": "admin/product"
+        },
+        {
+            "url": "admin/list/new_arrival",
+            "name": "New Arrival Products",
+            "i18n": "New arrival",
+            "class": "waves-effect waves-cyan",
+            "icon": "new_releases",
+            "slug": "admin/list/new_arrival"
+        },
+        {
+            "url": "admin/list/featured-products",
+            "name": "Featured products",
+            "i18n": "Featured products",
+            "class": "waves-effect waves-cyan",
+            "icon": "star",
+            "slug": "admin/list/featured-products"
+        },
+        {
+            "url": "admin/list/on-sale-products",
+            "name": "On sale products",
+            "i18n": "On sale products",
+            "class": "waves-effect waves-cyan",
+            "icon": "local_offer",
+            "slug": "admin/list/on-sale-products"
+        },
+        {
+            "url": "#",
+            "name": "Product Attributes",
+            "i18n": "Product Attributes",
+            "class": "collapsible-header waves-effect waves-cyan",
+            "icon": "assistant",
+            "slug": "admin/product",
+            "submenu": [
+                {
+                    "url": "/admin/size",
+                    "name": "size",
+                    "i18n": "size",
+                    "slug": "size"
+                },
+                {
+                    "url": "/admin/color",
+                    "name": "color",
+                    "i18n": "color",
+                    "slug": "color"
+                }
+            ]
+        },
+        {
+            "navheader": "COUPONS MANAGEMENT",
+            "icon": "more_horiz"
+        },
+        {
+            "url": "admin/coupon",
+            "name": "Coupons",
+            "i18n": "Coupons",
+            "class": "waves-effect waves-cyan",
+            "icon": "dock",
+            "slug": "coupon"
+        },
+        {
+            "navheader": "MEDIA MANAGEMENT",
+            "icon": "more_horiz"
+        },
+        {
+            "url": "admin/file-manager",
+            "name": "File Manager",
+            "i18n": "File Manager",
+            "class": "waves-effect waves-cyan",
+            "icon": "content_paste",
+            "slug": "admin/file-manager"
+        },
+        {
+            "navheader": "DRIVER MANAGEMENT",
+            "icon": "more_horiz"
+        },
+        {
+            "url": "admin/driver",
+            "name": "Driver",
+            "i18n": "Driver",
+            "class": "waves-effect waves-cyan",
+            "icon": "dock",
+            "slug": "driver"
+        },
+        {
+            "navheader": "ORDERS MANAGEMENT",
+            "icon": "more_horiz"
+        },
+        {
+            "url": "admin/order",
+            "name": "Orders",
+            "i18n": "Orders",
+            "class": "waves-effect waves-cyan",
+            "icon": "add_shopping_cart",
+            "slug": "orders"
+        },
+        {
+            "navheader": "CONTACT MANAGEMENT",
+            "icon": "more_horiz"
+        },
+        {
+            "url": "admin/quotes",
+            "name": "Contact",
+            "i18n": "Contact",
+            "class": "waves-effect waves-cyan",
+            "icon": "supervisor_account",
+            "slug": "quote"
+        },
+        {
+            "navheader": "ADDRESS MANAGEMENT",
+            "icon": "more_horiz"
+        },
+        {
+            "url": "admin/governorate",
+            "name": "Governorates",
+            "i18n": "Governorates",
+            "class": "waves-effect waves-cyan",
+            "icon": "dock",
+            "slug": "governorate"
+        },
+        {
+            "url": "admin/city",
+            "name": "Cities",
+            "i18n": "Cities",
+            "class": "waves-effect waves-cyan",
+            "icon": "dock",
+            "slug": "city"
+        },
+        {
+            "url": "admin/area",
+            "name": "Areas",
+            "i18n": "Areas",
+            "class": "waves-effect waves-cyan",
+            "icon": "dock",
+            "slug": "area"
+        },
+        {
+            "navheader": "SYSTEM MANAGEMENT",
+            "icon": "more_horiz"
+        },
+        {
+            "url": "/admin/setting",
+            "name": "Settings",
+            "i18n": "Settings",
+            "icon": "settings",
+            "slug": "setting"
+        },
+        {
+            "url": "javascript:void(0)",
+            "name": "Import",
+            "i18n": "Import",
+            "class": "collapsible-header waves-effect waves-cyan",
+            "icon": "file_download",
+            "slug": "import",
+            "submenu": [
+                {
+                    "url": "/admin/import/sap/products",
+                    "name": "SAP products",
+                    "i18n": "SAP products",
+                    "slug": "import/sap/products"
+                },
+                {
+                    "url": "/admin/import/excel/products",
+                    "name": "Excel products",
+                    "i18n": "excel-products",
+                    "slug": "import"
+                }
+            ]
+        },
+        {
+            "url": "/admin/main-slider",
+            "name": "Main Slider",
+            "i18n": "Main Slider",
+            "icon": "dock",
+            "slug": "main-slider"
+        },
+        {
+            "url": "javascript:void(0)",
+            "name": "Site Management",
+            "i18n": "Site Management",
+            "class": "collapsible-header waves-effect waves-cyan",
+            "slug": "",
+            "icon": "web",
+            "submenu": [
+                {
+                    "url": "javascript:void(0)",
+                    "name": "Sections",
+                    "i18n": "Sections",
+                    "class": "collapsible-header waves-effect waves-cyan",
+                    "slug": "",
+                    "icon": "web",
+                    "submenu": [
+                        {
+                            "url": "/admin/section-header",
+                            "name": "Header Section",
+                            "i18n": "Header Section",
+                            "slug": "section-header"
+                        },
+                        {
+                            "url": "/admin/section-footer",
+                            "name": "Footer Section",
+                            "i18n": "Footer Section",
+                            "slug": "section-footer"
+                        }
+                    ]
+                },
+                {
+                    "url": "javascript:void(0)",
+                    "name": "About Sections",
+                    "i18n": "Sections",
+                    "class": "collapsible-header waves-effect waves-cyan",
+                    "slug": "",
+                    "icon": "web",
+                    "submenu": [
+                        {
+                            "url": "/admin/about-section-one",
+                            "name": "About Section One",
+                            "i18n": "About Section One",
+                            "slug": "about-section-one"
+                        },
+                        {
+                            "url": "/admin/about-section-two",
+                            "name": "About Section Two",
+                            "i18n": "About Section Two",
+                            "slug": "about-section-one"
+                        },
+                        {
+                            "url": "/admin/about-section-three",
+                            "name": "About Section Three",
+                            "i18n": "About Section Three",
+                            "slug": "about-section-one"
+                        }
+                    ]
+                },
+                {
+                    "url": "/admin/social-media",
+                    "name": "Social Media",
+                    "i18n": "Social Media",
+                    "slug": "social-media"
+                },
+                {
+                    "url": "/admin/website-page",
+                    "name": "Pages Manager",
+                    "i18n": "Pages Manager",
+                    "slug": "website-page"
+                },
+                {
+                    "url": "/admin/banner",
+                    "name": "Banner",
+                    "i18n": "Banner",
+                    "slug": "banner"
+                },
+                {
+                    "url": "/admin/gallery",
+                    "name": "Gallery",
+                    "i18n": "Gallery",
+                    "slug": "gallery"
+                },
+                {
+                    "url": "admin/contact",
+                    "name": "Contact Us",
+                    "i18n": "Contact Us",
+                    "class": "waves-effect waves-cyan",
+                    "icon": "info",
+                    "slug": "contact-us"
+                },
+                {
+                    "url": "admin/faq",
+                    "name": "Faq",
+                    "i18n": "Faq",
+                    "class": "waves-effect waves-cyan",
+                    "icon": "info",
+                    "slug": "faq"
+                }
+            ]
+        },
+        {
+            "url": "javascript:void(0)",
+            "name": "App Management",
+            "i18n": "App Management",
+            "class": "collapsible-header waves-effect waves-cyan",
+            "slug": "",
+            "icon": "smartphone",
+            "submenu": [
+                {
+                    "url": "admin/staticPage",
+                    "name": "Pages Manager",
+                    "i18n": "Pages Manager",
+                    "slug": "Pages Manager"
+                },
+                {
+                    "url": "admin/walkthrough",
+                    "name": "Walkthroughs Manager",
+                    "i18n": "Walkthroughs Manager",
+                    "slug": "Walkthroughs Manager"
+                }
+            ]
+        },
+        {
+            "url": "https://www.tubishat.com/contact/",
+            "name": "Support",
+            "i18n": "Support",
+            "class": "waves-effect waves-cyan",
+            "icon": "help_outline",
+            "slug": "support",
+            "newTab": "_blank"
+        }
+    ]
+}
